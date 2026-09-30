@@ -86,13 +86,12 @@ defmodule Util do
     |> IO.gets()
     |> String.trim()
   end
+  
  def ingresar(mensaje, :booleano) do
      valor = mensaje
     |> IO.gets()
     |> String.trim()
     |> String.downcase()
-    |> String.to_atom()
-
     if valor == "si" do
       true
     else
